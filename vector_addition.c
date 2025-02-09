@@ -57,7 +57,7 @@ int main() {
     // Print results
     printVec(A, N);
     printVec(B, N);
-    printf(createDashString(3*N-1));
+    printf("%s",createDashString(3*N-1));
     printVec(C, N);
 
     // Free allocated memory
