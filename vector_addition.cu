@@ -83,6 +83,10 @@ int main() {
     // Perform vector addition on the GPU
     vecAdd(A, B, C, N);
 
+    // Wait for kernel to finish before continuing
+    cudaDeviceSynchronize();
+
+
     // Print results
     printVec(A, N);
     printVec(B, N);
